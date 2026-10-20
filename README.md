@@ -3,6 +3,8 @@
 Student: Bullen Ladu Martin |
 Registration number: 24/23862
 Institutional username: ug2423862@ines.ac.rw 
+Repository URL: https://github.com/ladumartinbullen-cmyk/AI_A2_2423862
+Final commit hash: 0f997c3f41ef46afa9592a011f9277dcc8c25b3a
 Verification code: AI-A2-3862 (seed 3862) 
 SWE 3513 Artificial Intelligence, INES-Ruhengeri, Individual Assignment 2 |
 
