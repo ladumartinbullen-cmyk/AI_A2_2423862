@@ -1,0 +1,8 @@
+{
+  "rainfall_mm": 5000,
+  "avg_temp_c": "hot",
+  "soil_moisture_pct": 55,
+  "fertilizer_kg": 120,
+  "season": "C",
+  "cooperative_support": 1
+}

@@ -1,0 +1,39 @@
+{
+  "noise_std_in_generator": 0.8,
+  "largest_regression_error": {
+    "row_id": 194,
+    "features": {
+      "rainfall_mm": 917.3452,
+      "avg_temp_c": 19.3099,
+      "soil_moisture_pct": 65.9621,
+      "fertilizer_kg": null,
+      "field_size_ha": 3.5942,
+      "cooperative_support": 0,
+      "season": "B"
+    },
+    "actual_yield_tons": 17.6681,
+    "predicted_yield_tons": 14.1991,
+    "error_tons": -3.469,
+    "temperature_distance_from_18c": 1.31,
+    "error_in_noise_sds": 4.34
+  },
+  "median_yield_per_ha_cleaned_data": 5.6329,
+  "misclassified_test_farms": 2,
+  "most_confident_misclassification": {
+    "row_id": 35,
+    "features": {
+      "rainfall_mm": 791.2905,
+      "avg_temp_c": 19.1945,
+      "soil_moisture_pct": 62.6012,
+      "fertilizer_kg": 172.6671,
+      "field_size_ha": 2.4226,
+      "cooperative_support": 1,
+      "season": "A"
+    },
+    "actual_high_risk": 0,
+    "predicted_high_risk": 1,
+    "predicted_probability": 0.6143,
+    "actual_yield_per_ha": 6.0536,
+    "distance_to_median_ypha": 0.4207
+  }
+}

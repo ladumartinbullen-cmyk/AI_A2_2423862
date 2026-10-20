@@ -1,0 +1,73 @@
+{
+  "silhouette_scores": {
+    "2": 0.15831422453358182,
+    "3": 0.12866953838055656,
+    "4": 0.13553100006131524,
+    "5": 0.13625306610391824,
+    "6": 0.14225130410503573
+  },
+  "selected_k": 2,
+  "selection_reason": "K=2 has the highest silhouette score (0.158).",
+  "scaling": "median imputation + StandardScaler + one-hot season, fitted on the training split only; targets are not used",
+  "profiles": [
+    {
+      "cluster": 0,
+      "size_train": 96,
+      "feature_means": {
+        "rainfall_mm": 1036.6143,
+        "avg_temp_c": 19.6824,
+        "soil_moisture_pct": 51.0894,
+        "fertilizer_kg": 126.5878,
+        "field_size_ha": 2.1245,
+        "cooperative_support": 0.0,
+        "season_A_share": 0.6042
+      },
+      "feature_z_vs_overall": {
+        "rainfall_mm": 0.011,
+        "avg_temp_c": 0.08,
+        "soil_moisture_pct": 0.101,
+        "fertilizer_kg": -0.011,
+        "field_size_ha": 0.047,
+        "cooperative_support": -0.968,
+        "season_A_share": 0.133
+      },
+      "plain_language_profile": "Cluster 0: mostly without cooperative support.",
+      "posthoc_mean_yield_tons": 11.8797,
+      "posthoc_high_risk_share": 0.5208
+    },
+    {
+      "cluster": 1,
+      "size_train": 90,
+      "feature_means": {
+        "rainfall_mm": 1031.6594,
+        "avg_temp_c": 19.0597,
+        "soil_moisture_pct": 47.6641,
+        "fertilizer_kg": 128.3312,
+        "field_size_ha": 2.0189,
+        "cooperative_support": 1.0,
+        "season_A_share": 0.4667
+      },
+      "feature_z_vs_overall": {
+        "rainfall_mm": -0.011,
+        "avg_temp_c": -0.085,
+        "soil_moisture_pct": -0.106,
+        "fertilizer_kg": 0.011,
+        "field_size_ha": -0.05,
+        "cooperative_support": 1.033,
+        "season_A_share": -0.142
+      },
+      "plain_language_profile": "Cluster 1: mostly supported by the cooperative.",
+      "posthoc_mean_yield_tons": 12.1063,
+      "posthoc_high_risk_share": 0.4778
+    }
+  ],
+  "interpretation": "The silhouette of 0.158 indicates weak cluster structure. The farm features are independent random draws, so the clusters are regions of a continuous space rather than naturally separate groups; use them as a descriptive grouping for field-officer visits, not as proof of distinct farm types. Yield and risk shares are shown after clustering (post-hoc) only to interpret clusters; they were never inputs.",
+  "verification_code": "AI-A2-3862",
+  "split": {
+    "random_state": 3862,
+    "test_size": 0.25,
+    "stratified_on": "high_risk",
+    "n_train": 186,
+    "n_test": 62
+  }
+}

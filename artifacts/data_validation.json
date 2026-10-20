@@ -1,0 +1,26 @@
+{
+  "rows_raw": 251,
+  "expected_base_rows": 248,
+  "expected_missing_per_column": 12,
+  "missing_values": {
+    "soil_moisture_pct": 13,
+    "fertilizer_kg": 13
+  },
+  "duplicate_rows": 3,
+  "leakage_check": "passed: yield_tons, yield per hectare and high_risk are not model inputs",
+  "range_check": "passed",
+  "schema_check": "passed",
+  "cleaning": {
+    "rows_before": 251,
+    "duplicates_removed": 3,
+    "rows_after": 248,
+    "missing_after_cleaning": {
+      "soil_moisture_pct": 12,
+      "fertilizer_kg": 12
+    },
+    "missing_handling": "median imputation fitted on the training split only (inside the sklearn Pipeline)"
+  },
+  "verification_code": "AI-A2-3862",
+  "sha256": "f3a4210b542054016e2690d417ad4c5a7c89c15c82323fdc2d31503a8f3fc9bd",
+  "base_rows_rule": "240 + (3862 mod 41) = 248"
+}

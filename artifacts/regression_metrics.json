@@ -1,0 +1,58 @@
+{
+  "models": {
+    "mean_baseline": {
+      "is_baseline": true,
+      "cv_rmse_mean": 2.7311567257784373,
+      "cv_mae_mean": 2.1937938882259163,
+      "cv_r2_mean": -0.014177563133014593,
+      "test": {
+        "mae": 2.0684238120013876,
+        "rmse": 2.5378984181954616,
+        "r2": -0.0013832100480044573
+      }
+    },
+    "ridge_regression": {
+      "is_baseline": false,
+      "cv_rmse_mean": 1.0431982547406413,
+      "cv_mae_mean": 0.8192080401666114,
+      "cv_r2_mean": 0.8543126766118266,
+      "test": {
+        "mae": 0.867453172701102,
+        "rmse": 1.116828290730018,
+        "r2": 0.8060790863551346
+      }
+    },
+    "random_forest": {
+      "is_baseline": false,
+      "cv_rmse_mean": 1.326654538673757,
+      "cv_mae_mean": 1.0526054773295046,
+      "cv_r2_mean": 0.7620846056835214,
+      "test": {
+        "mae": 1.0250936675879372,
+        "rmse": 1.311951478078911,
+        "r2": 0.7323992159104846
+      }
+    },
+    "gradient_boosting": {
+      "is_baseline": false,
+      "cv_rmse_mean": 1.241240427578377,
+      "cv_mae_mean": 0.9911257281582714,
+      "cv_r2_mean": 0.7904491992859656,
+      "test": {
+        "mae": 0.9650887834295443,
+        "rmse": 1.1876382740599583,
+        "r2": 0.7807093041541299
+      }
+    }
+  },
+  "selected_model": "ridge_regression",
+  "selection_reason": "ridge_regression has the lowest 5-fold cross-validated RMSE on the training split (1.043 t vs baseline 2.731 t). The test set was not used for selection; its held-out RMSE is 1.117 t and R2 is 0.806.",
+  "verification_code": "AI-A2-3862",
+  "split": {
+    "random_state": 3862,
+    "test_size": 0.25,
+    "stratified_on": "high_risk",
+    "n_train": 186,
+    "n_test": 62
+  }
+}

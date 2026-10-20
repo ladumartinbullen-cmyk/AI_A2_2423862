@@ -1,0 +1,53 @@
+{
+  "verification_code": "AI-A2-3862",
+  "student_id": "ug2423862@ines.ac.rw",
+  "registration_digits": "2423862",
+  "seed": 3862,
+  "dataset_file": "AI_A2_2423862.csv",
+  "dataset_sha256": "f3a4210b542054016e2690d417ad4c5a7c89c15c82323fdc2d31503a8f3fc9bd",
+  "features": [
+    "rainfall_mm",
+    "avg_temp_c",
+    "soil_moisture_pct",
+    "fertilizer_kg",
+    "field_size_ha",
+    "cooperative_support",
+    "season"
+  ],
+  "ranges": {
+    "rainfall_mm": [
+      600.0,
+      1400.0
+    ],
+    "avg_temp_c": [
+      12.0,
+      26.0
+    ],
+    "soil_moisture_pct": [
+      20.0,
+      80.0
+    ],
+    "fertilizer_kg": [
+      0.0,
+      250.0
+    ],
+    "field_size_ha": [
+      0.2,
+      4.0
+    ],
+    "cooperative_support": [
+      0,
+      1
+    ]
+  },
+  "selected_regression_model": "ridge_regression",
+  "selected_classification_model": "logistic_regression",
+  "selected_k": 2,
+  "cluster_profiles": [
+    "Cluster 0: mostly without cooperative support.",
+    "Cluster 1: mostly supported by the cooperative."
+  ],
+  "sklearn_version_trained": "1.9.1",
+  "synthetic_data": true,
+  "intended_use": "Classroom decision-support prototype. Not a replacement for an agronomist."
+}
